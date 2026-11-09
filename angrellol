@@ -1,0 +1,587 @@
+local Obsidian = loadstring(game:HttpGet("https://raw.githubusercontent.com/Springtrappy/Obsidian-Modded/refs/heads/main/Library.lua"))()
+local Obsidian2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Springtrappy/Obsidian-Modded/refs/heads/main/addons/SaveManager.lua"))()
+local Obsidian3 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Springtrappy/Obsidian-Modded/refs/heads/main/addons/ThemeManager.lua"))()
+Obsidian3:SetLibrary({
+    Destroy = function() end,
+    Init = function() end,
+    MakeLib = function() end,
+    Window = function() end,
+    __is_ui_elem = true,
+    Notify = function() end,
+    CreateLib = function() end,
+    MakeWindow = function() end,
+    CreateWindow = function() end,
+    New = function() end
+})
+Obsidian3:SetDefaultTheme({
+    MainColor = "141414",
+    FontFace = "Code",
+    FontColor = "ffffff",
+    OutlineColor = "222222",
+    BackgroundColor = "0a0a0a",
+    AccentColor = "3a3a3a"
+})
+local mspaint1 = Obsidian:CreateLoading({ TotalSteps = 4, Title = "mspaint", Icon = 95816097006870 })
+mspaint1:SetMessage("Initializing...")
+mspaint1:SetDescription("Waiting for game to load...")
+game:IsLoaded()
+mspaint1:SetCurrentStep(1)
+mspaint1:SetDescription("Loading configuration...")
+mspaint1:SetCurrentStep(2)
+mspaint1:ShowSidebarPage(true)
+local user_localplayer8 = mspaint1.Sidebar:AddLabel("User: LocalPlayer")
+local version_v3_0_09 = mspaint1.Sidebar:AddLabel("Version: v3.0.0")
+mspaint1:SetCurrentStep(3)
+mspaint1:SetDescription("Ready to start!")
+mspaint1:SetCurrentStep(4)
+mspaint1:Continue()
+local mspaint14 = Obsidian:CreateWindow({
+    NotifySide = "Right",
+    Icon = 95816097006870,
+    Title = "mspaint",
+    Footer = "version: example"
+})
+local main15 = mspaint14:AddTab("Main", "user")
+local kill_aura16 = mspaint14:AddTab("Kill Aura", "crosshair")
+local animation_player17 = mspaint14:AddTab("Animation Player", "Activity")
+local visuals18 = mspaint14:AddTab("Visuals", "eye")
+local misc19 = mspaint14:AddTab("Misc", "command")
+local ui_settings20 = mspaint14:AddTab("UI Settings", "settings")
+Obsidian2:SetLibrary({
+    Destroy = function() end,
+    Init = function() end,
+    MakeLib = function() end,
+    Window = function() end,
+    __is_ui_elem = true,
+    Notify = function() end,
+    CreateLib = function() end,
+    MakeWindow = function() end,
+    CreateWindow = function() end,
+    New = function() end
+})
+Obsidian2:IgnoreThemeSettings()
+Obsidian2:SetIgnoreIndexes({ [1] = "MenuKeybind" })
+Obsidian2:SetFolder("angrel.lol/best-chain-script")
+Obsidian2:SetSubFolder("Main")
+Obsidian3:SetFolder("angrel.lol")
+local cb7 = function(function49, ...)
+    ui_settings20:SetCallback(function49)
+    return Instance 
+end
+Obsidian2:BuildConfigSection({
+    Tab = function() end,
+    AddSection = function() end,
+    SetText = function() end,
+    SetSubFolder = function() end,
+    __is_ui_elem = true,
+    AddElement = function() end,
+    AddCheckbox = function() end,
+    CreateTab = function() end,
+    AddLeftTabbox = function() end,
+    AddNotification = function() end,
+    OnChanged = function() end,
+    CreateColorPicker = function() end,
+    SetFont = function() end,
+    Page = function() end,
+    Element = function() end,
+    AddTextbox = function() end,
+    SetFolder = function() end,
+    AddKeyBox = function() end,
+    Unload = function() end,
+    CreateGroup = function() end,
+    AddToggle = function() end,
+    AddKeybind = function() end,
+    MakeTab = function() end,
+    SetDisabledValues = function() end,
+    __newindex = function() end,
+    SetDPIScale = function() end,
+    Set = function() end,
+    AddInput = function() end,
+    AddLabel = function() end,
+    Init = function() end,
+    Toggle = function() end,
+    AddParagraph = function() end,
+    CreateTextBox = function() end,
+    Destroy = function() end,
+    LoadAutoloadConfig = function() end,
+    ApplyToTab = function() end,
+    CreateLabel = function() end,
+    ApplyToGroupbox = function() end,
+    BuildConfigSection = function() end,
+    OnUnload = function() end,
+    SetIgnoreIndexes = function() end,
+    AddSlider = function() end,
+    AddRightGroupbox = function() end,
+    SetLibrary = function() end,
+    SetVisibilityControl = function() end,
+    SetNotifySide = function() end,
+    Column = function() end,
+    SetMode = function() end,
+    AddColumn = function() end,
+    AddTabbox = function() end,
+    SetValueRGB = function() end,
+    GetState = function() end,
+    Divider = function() end,
+    Notify = function() end,
+    Group = function() end,
+    AddDropdown = function() end,
+    SetTransparency = function() end,
+    SetColor = function() end,
+    SetCornerRadius = function() end,
+    SetDisabled = function() end,
+    AddDraggableLabel = function() end,
+    Section = function() end,
+    AddPage = function() end,
+    CreateButton = function() end,
+    OnClick = function() end,
+    SetCallback = cb7,
+    Panel = function() end,
+    SetDescription = function() end,
+    SetTitle = function() end,
+    CreatePage = function() end,
+    AddDisabledValues = function() end,
+    AddValues = function() end,
+    SetVisibility = function() end,
+    SetVisible = function() end,
+    SetAlwaysOnTop = function() end,
+    CreateToggle = function() end,
+    CreateGroupbox = function() end,
+    AddTooltip = function() end,
+    AddColorPicker = function() end,
+    AddDivider = function() end,
+    AddDraggableMenu = function() end,
+    AddDraggableButton = function() end,
+    AddGroupbox = function() end,
+    AddSubTab = function() end,
+    CreateParagraph = function() end,
+    UpdateWarningBox = function() end,
+    CreateContainer = function() end,
+    CreateWindow = function() end,
+    AddKeyTab = function() end,
+    CreateDropdown = function() end,
+    AddRightTabbox = function() end,
+    IgnoreThemeSettings = function() end,
+    SetValues = function() end,
+    AddContainer = function() end,
+    AddTextBox = function() end,
+    CreatePanel = function() end,
+    CreateColumn = function() end,
+    Container = function() end,
+    CreateKeybind = function() end,
+    AddLeftGroupbox = function() end,
+    SetKey = function() end,
+    GetValue = function() end,
+    AddTab = function() end,
+    AddBind = function() end,
+    AddKeyPicker = function() end,
+    CreateInput = function() end,
+    AddGroup = function() end,
+    AddPanel = function() end,
+    CreateTabbox = function() end,
+    AddButton = function() end,
+    CreateSlider = function() end,
+    Prompt = function() end,
+    CreateSection = function() end,
+    SetValue = function() end
+})
+ui_settings20:OnChanged("text_input")
+ui_settings20:OnUnload()
+ui_settings20:OnClick()
+Obsidian3:ApplyToTab({
+    Tab = function() end,
+    AddSection = function() end,
+    SetText = function() end,
+    SetSubFolder = function() end,
+    __is_ui_elem = true,
+    AddElement = function() end,
+    AddCheckbox = function() end,
+    CreateTab = function() end,
+    AddLeftTabbox = function() end,
+    AddNotification = function() end,
+    OnChanged = function() end,
+    CreateColorPicker = function() end,
+    SetFont = function() end,
+    Page = function() end,
+    Element = function() end,
+    AddTextbox = function() end,
+    SetFolder = function() end,
+    AddKeyBox = function() end,
+    Unload = function() end,
+    CreateGroup = function() end,
+    AddToggle = function() end,
+    AddKeybind = function() end,
+    MakeTab = function() end,
+    SetDisabledValues = function() end,
+    __newindex = function() end,
+    SetDPIScale = function() end,
+    Set = function() end,
+    AddInput = function() end,
+    AddLabel = function() end,
+    Init = function() end,
+    Toggle = function() end,
+    AddParagraph = function() end,
+    CreateTextBox = function() end,
+    Destroy = function() end,
+    LoadAutoloadConfig = function() end,
+    ApplyToTab = function() end,
+    CreateLabel = function() end,
+    ApplyToGroupbox = function() end,
+    BuildConfigSection = function() end,
+    OnUnload = function() end,
+    SetIgnoreIndexes = function() end,
+    AddSlider = function() end,
+    AddRightGroupbox = function() end,
+    SetLibrary = function() end,
+    SetVisibilityControl = function() end,
+    SetNotifySide = function() end,
+    Column = function() end,
+    SetMode = function() end,
+    AddColumn = function() end,
+    AddTabbox = function() end,
+    SetValueRGB = function() end,
+    GetState = function() end,
+    Divider = function() end,
+    Notify = function() end,
+    Group = function() end,
+    AddDropdown = function() end,
+    SetTransparency = function() end,
+    SetColor = function() end,
+    SetCornerRadius = function() end,
+    SetDisabled = function() end,
+    AddDraggableLabel = function() end,
+    Section = function() end,
+    AddPage = function() end,
+    CreateButton = function() end,
+    OnClick = function() end,
+    SetCallback = cb7,
+    Panel = function() end,
+    SetDescription = function() end,
+    SetTitle = function() end,
+    CreatePage = function() end,
+    AddDisabledValues = function() end,
+    AddValues = function() end,
+    SetVisibility = function() end,
+    SetVisible = function() end,
+    SetAlwaysOnTop = function() end,
+    CreateToggle = function() end,
+    CreateGroupbox = function() end,
+    AddTooltip = function() end,
+    AddColorPicker = function() end,
+    AddDivider = function() end,
+    AddDraggableMenu = function() end,
+    AddDraggableButton = function() end,
+    AddGroupbox = function() end,
+    AddSubTab = function() end,
+    CreateParagraph = function() end,
+    UpdateWarningBox = function() end,
+    CreateContainer = function() end,
+    CreateWindow = function() end,
+    AddKeyTab = function() end,
+    CreateDropdown = function() end,
+    AddRightTabbox = function() end,
+    IgnoreThemeSettings = function() end,
+    SetValues = function() end,
+    AddContainer = function() end,
+    AddTextBox = function() end,
+    CreatePanel = function() end,
+    CreateColumn = function() end,
+    Container = function() end,
+    CreateKeybind = function() end,
+    AddLeftGroupbox = function() end,
+    SetKey = function() end,
+    GetValue = function() end,
+    AddTab = function() end,
+    AddBind = function() end,
+    AddKeyPicker = function() end,
+    CreateInput = function() end,
+    AddGroup = function() end,
+    AddPanel = function() end,
+    CreateTabbox = function() end,
+    AddButton = function() end,
+    CreateSlider = function() end,
+    Prompt = function() end,
+    CreateSection = function() end,
+    SetValue = function() end
+})
+ui_settings20:OnChanged("text_input")
+ui_settings20:OnUnload()
+ui_settings20:OnClick()
+local main_settings28 = main15:AddLeftGroupbox("Main Settings")
+local combat_exploit29 = main15:AddRightGroupbox("Combat & Exploit")
+local risk_detection30 = main15:AddRightGroupbox("Risk Detection")
+local tomahawk_kill_aura31 = kill_aura16:AddLeftGroupbox("Tomahawk Kill Aura")
+local auto_parry32 = kill_aura16:AddLeftGroupbox("Auto Parry")
+local kill_aura_settings33 = kill_aura16:AddRightGroupbox("Kill Aura Settings")
+local animation_configuration34 = animation_player17:AddLeftGroupbox("Animation Configuration")
+local global_settings_for_esp35 = visuals18:AddLeftGroupbox("Global Settings for ESP")
+local chain_esp36 = visuals18:AddLeftGroupbox("Chain ESP")
+local scrap_esp37 = visuals18:AddRightGroupbox("Scrap ESP")
+local player_esp38 = visuals18:AddLeftGroupbox("Player ESP")
+local lighting39 = visuals18:AddLeftGroupbox("Lighting")
+local lighting8 = game:GetService("Lighting")
+lighting8:GetChildren()
+local workspace16 = game:GetService("Workspace")
+workspace.CurrentCamera:GetChildren()
+local espdistancescale41 = global_settings_for_esp35:AddToggle("EspDistanceScale", { Default = false, Text = "Get smaller if farther" })
+local chamsenabled42 = global_settings_for_esp35:AddToggle("ChamsEnabled", { Default = false, Text = "Chams ESP" })
+local arrowsenabled43 = global_settings_for_esp35:AddToggle("ArrowsEnabled", { Default = false, Text = "Enable OOB Arrows" })
+local infalljustnotammo44 = main_settings28:AddToggle("infalljustnotammo", {
+    Text = "Infinite all(just not ammo) <font color=\"#ff0000\">[Risky]</font>",
+    Default = false,
+    Callback = function(function46, function47, function48)
+        Obsidian:Notify("This feature is Risky of \"Infinite all\" Please be careful", 6) 
+    end
+})
+local runspeedtoggle45 = main_settings28:AddToggle("RunSpeedToggle", {
+    Text = "Enable Custom RunSpeed",
+    Default = false,
+    Callback = function(function43, function44, function45)
+        game:GetService("Players")
+        game.Players.LocalPlayer.Character.Parent = workspace16
+        game.Players.LocalPlayer.Character:FindFirstChild("RunSpeed", true) 
+    end
+})
+local runspeedvalue46 = main_settings28:AddSlider("RunSpeedValue", {
+    Min = 1,
+    Default = 16,
+    Max = 100,
+    Text = "RunSpeed Modifier",
+    Rounding = 0
+})
+local godmodetoggle47 = combat_exploit29:AddToggle("GodmodeToggle", {
+    Text = "Godmode <font color=\"#ff0000\">[Risky]</font>",
+    Default = false,
+    Callback = function(function39, function40, function41, function42)
+        Obsidian:Notify("This feature is Risky of \"Godmode\" Please be careful", 6) 
+    end
+})
+local facechaintoggle48 = combat_exploit29:AddToggle("FaceChainToggle", {
+    Text = "Face CHAIN",
+    Default = false,
+    Callback = function(function34, function35, function36, function37, function38)
+        Obsidian:Notify("facing chain now", 3) 
+    end
+})
+local killauratoggle49 = tomahawk_kill_aura31:AddToggle("KillAuraToggle", {
+    Text = "Kill Aura <font color=\"#ff0000\">[Risky]</font>",
+    Default = false,
+    Callback = function(function32, function33)
+        Obsidian:Notify("This feature is Risky of \"Kill Aura\" Please be careful", 6) 
+    end
+})
+local tomahawkanimtoggle50 = tomahawk_kill_aura31:AddToggle("TomahawkAnimToggle", { Default = true, Text = "Tomahawk hit animations" })
+local autoparrytoggle51 = auto_parry32:AddToggle("AutoParryToggle", {
+    Text = "Enable Auto Parry",
+    Default = false,
+    Callback = function(function27, function28, function29, function30, function31)
+        Obsidian:Notify("This feature is Risky of \"Auto Parry\" Please be careful", 6) 
+    end
+})
+local chainparryrange52 = auto_parry32:AddSlider("ChainParryRange", {
+    Min = 5,
+    Default = 15,
+    Max = 50,
+    Text = "Chain range",
+    Rounding = 0
+})
+local chainparrycooldown53 = auto_parry32:AddSlider("ChainParryCooldown", {
+    Min = 0,
+    Default = 10,
+    Max = 75,
+    Text = "parry cooldown",
+    Rounding = 1
+})
+local killaurainterval54 = kill_aura_settings33:AddSlider("KillAuraInterval", {
+    Min = 0.2,
+    Default = 0.35,
+    Max = 1,
+    Text = "Kill Aura Interval",
+    Rounding = 2
+})
+local killaurarange55 = kill_aura_settings33:AddSlider("KillAuraRange", {
+    Min = 10,
+    Default = 25,
+    Max = 100,
+    Text = "Kill Aura Range",
+    Rounding = 0
+})
+local animspeedertoggle56 = animation_configuration34:AddToggle("AnimSpeederToggle", { Default = false, Text = "Animation speeder" })
+local animspeedvalue57 = animation_configuration34:AddSlider("AnimSpeedValue", {
+    Min = 1,
+    Default = 1,
+    Max = 30,
+    Text = "Speed",
+    Rounding = 1
+})
+local fullbrighttoggle58 = lighting39:AddToggle("FullBrightToggle", {
+    Text = "Full bright",
+    Default = false,
+    Callback = function(function26)
+        lighting8.Ambient = Color3.fromRGB(128, 128, 128)
+        lighting8.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+        lighting8.ClockTime = 14
+        lighting8.Brightness = 2 
+    end
+})
+local nofogtoggle59 = lighting39:AddToggle("NoFogToggle", {
+    Text = "No fog",
+    Default = false,
+    Callback = function(function23, function24, function25)
+        lighting8.FogStart = 0
+        lighting8.FogEnd = 100000
+        lighting8:GetChildren()
+        workspace.CurrentCamera:GetChildren() 
+    end
+})
+local noblurtoggle60 = lighting39:AddToggle("NoBlurToggle", { Default = false, Text = "No blur" })
+misc19:AddLeftGroupbox("Miscellaneous Settings"):AddToggle("UnlockCameraToggle", { Default = false, Text = "Unlock Camera" })
+local staffwatch62 = risk_detection30:AddToggle("StaffWatch", {
+    Text = "Staff Watch",
+    Default = false,
+    Callback = function(function22) Obsidian:Notify("Staff Watch enabled.", 3) end
+})
+local staffactiondropdown63 = risk_detection30:AddDropdown("StaffActionDropdown", {
+    Multi = false,
+    Text = "Staff Action",
+    Values = { [1] = "Notify", [2] = "Kick" },
+    Default = 1
+})
+local rolestodetectdropdown64 = risk_detection30:AddDropdown("RolesToDetectDropdown", {
+    Multi = true,
+    Text = "Roles to detect",
+    Values = {
+        [1] = "Testing Management",
+        [2] = "Server Moderator",
+        [3] = "Game Moderator",
+        [4] = "Administrator",
+        [5] = "Developer+",
+        [6] = "Manager",
+        [7] = "Owner",
+        [8] = "Holder"
+    },
+    Default = 1
+})
+local test_staff_watch65 = risk_detection30:AddButton({
+    Func = function(function20, function21)
+        players21:GetPlayers()
+        Obsidian:Notify("[Test] No staff members with the selected roles are currently in your server.", 5) 
+    end,
+    Text = "Test Staff Watch"
+})
+local chainespenabled66 = chain_esp36:AddToggle("ChainEspEnabled", {
+    Text = "Enable Chain ESP",
+    Default = false,
+    Callback = function(function14, function15, function16, function17, function18, function19)
+        Obsidian:Notify("Chain ESP enabled.", 3) 
+    end
+})
+local chainboxtype67 = chain_esp36:AddDropdown("ChainBoxType", {
+    Text = "Box Type",
+    Multi = false,
+    Values = {
+        [1] = "2D Box",
+        [2] = "3D Box",
+        [3] = "Corners",
+        [4] = "Highlight"
+    },
+    Default = "Corners"
+})
+local chainbox68 = chain_esp36:AddToggle("ChainBox", { Default = true, Text = "Display Box" })
+local chainboxcolor69 = chainbox68:AddColorPicker("ChainBoxColor", {
+    Default = { _values = { B = 0, G = 0, R = 1 } },
+    Title = "ESP Color"
+})
+local chaintracer70 = chain_esp36:AddToggle("ChainTracer", { Default = true, Text = "Tracer" })
+local chaintracercolor71 = chaintracer70:AddColorPicker("ChainTracerColor", {
+    Default = { _values = { B = 0, G = 0, R = 1 } },
+    Title = "Tracer Color"
+})
+local chainname72 = chain_esp36:AddToggle("ChainName", { Default = true, Text = "Name" })
+local chainnamecolor73 = chainname72:AddColorPicker("ChainNameColor", {
+    Default = { _values = { B = 1, G = 1, R = 1 } },
+    Title = "Name Color"
+})
+local chaindistance74 = chain_esp36:AddToggle("ChainDistance", { Default = true, Text = "Distance" })
+local chaindistancecolor75 = chaindistance74:AddColorPicker("ChainDistanceColor", {
+    Default = { _values = { B = 1, G = 1, R = 1 } },
+    Title = "Distance Color"
+})
+local chainhealth76 = chain_esp36:AddToggle("ChainHealth", { Default = true, Text = "Health / Attributes" })
+local chainhealthcolor77 = chainhealth76:AddColorPicker("ChainHealthColor", {
+    Default = { _values = { B = 1, G = 1, R = 1 } },
+    Title = "Health Color"
+})
+local scrapespenabled78 = scrap_esp37:AddToggle("ScrapEspEnabled", {
+    Text = "Enable Scrap ESP",
+    Default = false,
+    Callback = function(function11, function12, function13)
+        Obsidian:Notify("Scrap ESP enabled.", 3) 
+    end
+})
+local scrapboxtype79 = scrap_esp37:AddDropdown("ScrapBoxType", {
+    Text = "Box Type",
+    Multi = false,
+    Values = {
+        [1] = "2D Box",
+        [2] = "3D Box",
+        [3] = "Corners",
+        [4] = "Highlight"
+    },
+    Default = "Corners"
+})
+local scrapbox80 = scrap_esp37:AddToggle("ScrapBox", { Default = true, Text = "Display Box" })
+local scrapboxcolor81 = scrapbox80:AddColorPicker("ScrapBoxColor", {
+    Default = { _values = { B = 0, G = 1, R = 0 } },
+    Title = "ESP Color"
+})
+local scraptracer82 = scrap_esp37:AddToggle("ScrapTracer", { Default = true, Text = "Tracer" })
+local scraptracercolor83 = scraptracer82:AddColorPicker("ScrapTracerColor", {
+    Default = { _values = { B = 0, G = 1, R = 0 } },
+    Title = "Tracer Color"
+})
+local scraptext84 = scrap_esp37:AddToggle("ScrapText", { Default = true, Text = "Name / Distance" })
+local scraptextcolor85 = scraptext84:AddColorPicker("ScrapTextColor", {
+    Default = { _values = { B = 1, G = 1, R = 1 } },
+    Title = "Text Color"
+})
+local playerespenabled86 = player_esp38:AddToggle("PlayerEspEnabled", {
+    Text = "Enable Player ESP",
+    Default = false,
+    Callback = function(function5, function6, function7, function8, function9, function10)
+        Obsidian:Notify("Player ESP enabled.", 3) 
+    end
+})
+local playerboxtype87 = player_esp38:AddDropdown("PlayerBoxType", {
+    Text = "Box Type",
+    Multi = false,
+    Values = {
+        [1] = "2D Box",
+        [2] = "3D Box",
+        [3] = "Corners",
+        [4] = "Highlight"
+    },
+    Default = "Corners"
+})
+local playerbox88 = player_esp38:AddToggle("PlayerBox", { Default = true, Text = "Display Box" })
+local playerboxcolor89 = playerbox88:AddColorPicker("PlayerBoxColor", {
+    Default = { _values = { B = 1, G = 0, R = 0 } },
+    Title = "ESP Color"
+})
+local playertracer90 = player_esp38:AddToggle("PlayerTracer", { Default = true, Text = "Tracer" })
+local playertracercolor91 = playertracer90:AddColorPicker("PlayerTracerColor", {
+    Default = { _values = { B = 1, G = 0, R = 0 } },
+    Title = "Tracer Color"
+})
+local playername92 = player_esp38:AddToggle("PlayerName", { Default = true, Text = "Name / Distance" })
+local playernamecolor93 = playername92:AddColorPicker("PlayerNameColor", {
+    Default = { _values = { B = 1, G = 1, R = 1 } },
+    Title = "Text Color"
+})
+local autocollectscrap94 = main_settings28:AddToggle("AutoCollectScrap", {
+    Text = "Auto Collect Scrap",
+    Default = false,
+    Callback = function(function1, function2, function3, function4)
+        Obsidian:Notify("Auto Collect Scrap enabled.", 3) 
+    end
+})
+error("attempt to index nil with 'new'")
