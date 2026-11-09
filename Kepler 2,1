@@ -1,0 +1,1032 @@
+print("starting....")
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+print("debug: rayfield loaded")
+local players2 = game:GetService("Players")
+local replicatedStorage3 = game:GetService("ReplicatedStorage")
+local runService4 = game:GetService("RunService")
+local lighting5 = game:GetService("Lighting")
+local userInputService6 = game:GetService("UserInputService")
+local workspace7 = game:GetService("Workspace")
+local proximityPromptService8 = game:GetService("ProximityPromptService")
+local identity9, identity10 = identifyexecutor()
+game.Players.LocalPlayer:WaitForChild("PlayerStats")
+PlayerStats.Parent = game.Players.LocalPlayer
+PlayerStats:WaitForChild("Blueprints")
+Blueprints.Parent = PlayerStats
+workspace7:WaitForChild("Misc", 10)
+Misc.Parent = workspace7
+Misc:WaitForChild("AI", 10)
+AI.Parent = Misc
+AI:GetChildren()
+AI.ChildAdded:Connect(function(function284, function285, function286, function287) end)
+local kepler_2_1_recode1 = Rayfield:CreateWindow({
+    LoadingTitle = "Kepler 2.1 | Recode",
+    Name = "Kepler 2.1 | Recode",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "KeplerSettings",
+        FileName = "Config"
+    },
+    LoadingSubtitle = "insane update fr...",
+    Icon = 0,
+    Theme = "Default"
+})
+local main2 = kepler_2_1_recode1:CreateTab("Main", 4483362458)
+local adonis_anticheat_bypass3 = main2:CreateButton({
+    Name = "Adonis AntiCheat Bypass",
+    Callback = function(function280, function281, function282, function283)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/refs/heads/main/Source.lua"))()
+        replicatedStorage3:FindFirstChild("GameStuff")
+        GameStuff.Parent = replicatedStorage3
+        GameStuff:FindFirstChild("Modules")
+        Modules.Parent = GameStuff
+        Modules:FindFirstChild("ProjectileHandler")
+        ProjectileHandler.Parent = Modules
+        game.Players.LocalPlayer.CharacterAdded:Connect(function() end)
+        game.Players.LocalPlayer.Character.Parent = workspace7 
+    end
+})
+local copy_discord_invite_link4 = main2:CreateButton({
+    Name = "Copy Discord Invite Link",
+    Callback = function(function278, function279)
+        Rayfield:Notify({ Duration = 2, Title = "Copied", Content = ":)" }) 
+    end
+})
+local higher_walk_speed5 = main2:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function273, function274, function275, function276, function277)
+        runService4.RenderStepped:Connect(function(function272)
+            replicatedStorage3:FindFirstChild("Assets")
+            Assets.Parent = replicatedStorage3
+            Assets:FindFirstChild("Client")
+            Client.Parent = Assets
+            Client:FindFirstChild("Movement")
+            Movement.Parent = Client
+            Movement:FindFirstChild("Velocity")
+            Velocity.Parent = Movement
+            Value.Parent = Velocity
+            Velocity.Value = 31
+            game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+            Humanoid.Parent = game.Players.LocalPlayer.Character
+            Humanoid.WalkSpeed = 31 
+        end)
+        replicatedStorage3:FindFirstChild("Assets")
+        Assets:FindFirstChild("Client")
+        Client:FindFirstChild("Movement")
+        Movement:FindFirstChild("Velocity")
+        game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") 
+    end,
+    Name = "Higher Walk Speed",
+    Flag = "SafeSpeed"
+})
+local instant_respawn6 = main2:CreateButton({
+    Name = "Instant Respawn",
+    Callback = function(function270, function271)
+        replicatedStorage3:FindFirstChild("GameStuff")
+        GameStuff:FindFirstChild("Remotes")
+        Remotes.Parent = GameStuff
+        Remotes:FindFirstChild("GameEvent")
+        GameEvent.Parent = Remotes
+        GameEvent:FireServer("Respawn") 
+    end
+})
+local infinite_battery7 = main2:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function264, function265, function266, function267, function268, function269)
+        runService4.RenderStepped:Connect(function(function260, function261, function262, function263)
+            game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+            PlayerGui.Parent = game.Players.LocalPlayer
+            game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+            game.Players.LocalPlayer.PlayerGui:FindFirstChild("Ingame")
+            Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+            game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+            Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+            game.Players.LocalPlayer.PlayerGui.Ingame:FindFirstChild("Values")
+            Values.Parent = game.Players.LocalPlayer.PlayerGui.Ingame
+            game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+            Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+            Values.Parent = game.Players.LocalPlayer.PlayerGui.Ingame
+            game.Players.LocalPlayer.PlayerGui.Ingame.Values:FindFirstChild("Battery")
+            Battery.Parent = game.Players.LocalPlayer.PlayerGui.Ingame.Values
+            Value.Parent = Battery
+            Battery.Value = 100 
+        end)
+        game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        game.Players.LocalPlayer.PlayerGui:FindFirstChild("Ingame")
+        Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+        game.Players.LocalPlayer.PlayerGui.Ingame:FindFirstChild("Values")
+        Values.Parent = game.Players.LocalPlayer.PlayerGui.Ingame
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+        Values.Parent = game.Players.LocalPlayer.PlayerGui.Ingame
+        game.Players.LocalPlayer.PlayerGui.Ingame.Values:FindFirstChild("Battery")
+        Battery.Parent = game.Players.LocalPlayer.PlayerGui.Ingame.Values
+        Value.Parent = Battery
+        Battery.Value = 100 
+    end,
+    Name = "Infinite Battery",
+    Flag = "InfBattery"
+})
+local infinite_inventory8 = main2:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function259)
+        runService4.RenderStepped:Connect(function(function257, function258)
+            game.Players.LocalPlayer.Character:FindFirstChild("Items")
+            Items.Parent = game.Players.LocalPlayer.Character
+            Items:GetAttribute("Storage")
+            Items:GetAttribute("Storage")
+            Items:SetAttribute("Storage", 0)
+            Items:SetAttribute("Storage", 0) 
+        end)
+        game.Players.LocalPlayer.Character:FindFirstChild("Items")
+        Items:GetAttribute("Storage")
+        Items:GetAttribute("Storage") 
+    end,
+    Name = "Infinite Inventory",
+    Flag = "InfiniteInventory"
+})
+local force_buy_xsaw9 = main2:CreateButton({
+    Name = "Force Buy XSaw",
+    Callback = function(function256)
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        game.Players.LocalPlayer.PlayerGui:FindFirstChild("Ingame")
+        Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+        game.Players.LocalPlayer.PlayerGui.Ingame:FindFirstChild("ShopUIHandler")
+        ShopUIHandler.Parent = game.Players.LocalPlayer.PlayerGui.Ingame
+        ShopUIHandler:FindFirstChild("Remote")
+        Remote.Parent = ShopUIHandler
+        Remote.Parent = ShopUIHandler
+        ShopUIHandler.Remote:FireServer("Buy", "XSaw") 
+    end
+})
+local detect_admins_developers10 = main2:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function251, function252, function253, function254, function255)
+        players2.PlayerAdded:Connect(function(function245, function246, function247, function248, function249, function250)
+ 
+        end) 
+    end,
+    Name = "Detect Admins/Developers",
+    Flag = "DetectAllToggle"
+})
+local no_fog11 = main2:CreateButton({
+    Name = "No Fog",
+    Callback = function(function243, function244)
+        lighting5.FogEnd = 1000000
+        lighting5:GetPropertyChangedSignal("FogEnd")
+        lighting5:GetPropertyChangedSignal("FogEnd"):Connect(function(function238, function239, function240, function241, function242)
+            lighting5.FogEnd = 1000000 
+        end)
+        lighting5.FogEnd = 1000000
+        lighting5:GetDescendants()
+        lighting5.DescendantAdded:Connect(function(function236, function237) end) 
+    end
+})
+local full_bright12 = main2:CreateButton({
+    Name = "Full Bright",
+    Callback = function(function232, function233, function234, function235)
+        lighting5.Brightness = 1
+        lighting5.ClockTime = 12
+        lighting5.FogEnd = 1000000
+        lighting5.GlobalShadows = false
+        lighting5.Ambient = Color3.fromRGB(178, 178, 178)
+        lighting5:GetPropertyChangedSignal("Brightness")
+        local cb130 = function(function227, function228, function229, function230, function231)
+            lighting5.Brightness = 1
+            lighting5.ClockTime = 12
+            lighting5.FogEnd = 1000000
+            lighting5.GlobalShadows = false
+            lighting5.Ambient = Color3.fromRGB(178, 178, 178) 
+        end
+        lighting5:GetPropertyChangedSignal("Brightness"):Connect(cb130)
+        lighting5.Brightness = 1
+        lighting5.ClockTime = 12
+        lighting5.FogEnd = 1000000
+        lighting5.GlobalShadows = false
+        lighting5.Ambient = Color3.fromRGB(178, 178, 178)
+        lighting5:GetPropertyChangedSignal("ClockTime")
+        lighting5:GetPropertyChangedSignal("ClockTime"):Connect(cb130)
+        lighting5.Brightness = 1
+        lighting5.ClockTime = 12
+        lighting5.FogEnd = 1000000
+        lighting5.GlobalShadows = false
+        lighting5.Ambient = Color3.fromRGB(178, 178, 178)
+        lighting5:GetPropertyChangedSignal("FogEnd")
+        lighting5:GetPropertyChangedSignal("FogEnd"):Connect(cb130)
+        lighting5.Brightness = 1
+        lighting5.ClockTime = 12
+        lighting5.FogEnd = 1000000
+        lighting5.GlobalShadows = false
+        lighting5.Ambient = Color3.fromRGB(178, 178, 178)
+        lighting5:GetPropertyChangedSignal("GlobalShadows")
+        lighting5:GetPropertyChangedSignal("GlobalShadows"):Connect(cb130)
+        lighting5.Brightness = 1
+        lighting5.ClockTime = 12
+        lighting5.FogEnd = 1000000
+        lighting5.GlobalShadows = false
+        lighting5.Ambient = Color3.fromRGB(178, 178, 178)
+        lighting5:GetPropertyChangedSignal("Ambient")
+        lighting5:GetPropertyChangedSignal("Ambient"):Connect(cb130)
+        lighting5.Brightness = 1
+        lighting5.ClockTime = 12
+        lighting5.FogEnd = 1000000
+        lighting5.GlobalShadows = false
+        lighting5.Ambient = Color3.fromRGB(178, 178, 178) 
+    end
+})
+main2:CreateDivider()
+local thirdperson14 = main2:CreateButton({
+    Name = "ThirdPerson",
+    Callback = function(function225, function226)
+        game.Players.LocalPlayer.CameraMode = Enum.CameraMode.Classic
+        game.Players.LocalPlayer.CameraMaxZoomDistance = 1000
+        game.Players.LocalPlayer.CameraMinZoomDistance = 0.5 
+    end
+})
+local remove_sack_on_head15 = main2:CreateButton({
+    Name = "Remove sack on head",
+    Callback = function(function220, function221, function222, function223, function224)
+        game.Players.LocalPlayer.Character:FindFirstChild("Sack")
+        Sack.Parent = game.Players.LocalPlayer.Character
+        Sack:FindFirstChild("SurfaceAppearance")
+        SurfaceAppearance.Parent = Sack
+        SurfaceAppearance.Parent = Sack
+        Sack.SurfaceAppearance:Destroy()
+        Sack.SurfaceAppearance.Parent = nil 
+    end
+})
+local gui16 = kepler_2_1_recode1:CreateTab("Gui", "terminal")
+local deconstructor_gui17 = gui16:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function219)
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        game.Players.LocalPlayer.PlayerGui:WaitForChild("Ingame", 5)
+        Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+        Ingame:FindFirstChild("Deconstructor")
+        Deconstructor.Parent = Ingame
+        Deconstructor.Visible = true 
+    end,
+    Name = "Deconstructor Gui",
+    Flag = "DeconstructorToggle"
+})
+local workbench_gui18 = gui16:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function218)
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        game.Players.LocalPlayer.PlayerGui:WaitForChild("Ingame", 5)
+        Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+        Ingame:FindFirstChild("Workbench")
+        Workbench.Parent = Ingame
+        Workbench.Visible = true 
+    end,
+    Name = "Workbench Gui",
+    Flag = "WorkbenchToggle"
+})
+local shop_gui19 = gui16:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function217)
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        game.Players.LocalPlayer.PlayerGui:WaitForChild("Ingame", 5)
+        Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+        Ingame:FindFirstChild("Shop")
+        Shop.Parent = Ingame
+        Shop.Visible = true 
+    end,
+    Name = "Shop Gui",
+    Flag = "ShopToggle"
+})
+local experimental20 = kepler_2_1_recode1:CreateTab("experimental", "flask-conical")
+local combat21 = kepler_2_1_recode1:CreateTab("Combat", "swords")
+local anti_longer_dodge_cooldown22 = experimental20:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function211, function212, function213, function214, function215, function216)
+        game.Players.LocalPlayer.Character:WaitForChild("Humanoid", 5)
+        Humanoid:GetChildren()
+        Humanoid.ChildAdded:Connect(function(function208, function209, function210) end)
+        game.Players.LocalPlayer.CharacterAdded:Connect(function(function207) end) 
+    end,
+    Name = "Anti Longer Dodge CoolDown",
+    Flag = "AntiLongDodge"
+})
+local autoqte23 = experimental20:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function206)
+        game.Players.LocalPlayer.Character:WaitForChild("Stats", 5)
+        Stats.Parent = game.Players.LocalPlayer.Character
+        Stats:WaitForChild("ClashStrength", 5)
+        ClashStrength.Parent = Stats
+        runService4.Heartbeat:Connect(function(function198, function199, function200, function201, function202)
+            Value.Parent = ClashStrength 
+        end)
+        game.Players.LocalPlayer.CharacterAdded:Connect(function(function203, function204, function205) end)
+        game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        game.Players.LocalPlayer.PlayerGui:FindFirstChild("Ingame")
+        Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        Ingame.Parent = game.Players.LocalPlayer.PlayerGui
+        game.Players.LocalPlayer.PlayerGui.Ingame:FindFirstChild("MechanicsFrame")
+        MechanicsFrame.Parent = game.Players.LocalPlayer.PlayerGui.Ingame
+        MechanicsFrame:FindFirstChild("QTEToma")
+        QTEToma.Parent = MechanicsFrame
+        QTEToma:GetPropertyChangedSignal("Visible")
+        QTEToma:GetPropertyChangedSignal("Visible"):Connect(function()
+            Visible.Parent = QTEToma
+            game.Players.LocalPlayer.Character:FindFirstChild("CharacterHandler")
+            CharacterHandler.Parent = game.Players.LocalPlayer.Character
+            CharacterHandler:FindFirstChild("Contents")
+            Contents.Parent = CharacterHandler
+            Contents:FindFirstChild("Remotes")
+            Remotes.Parent = Contents
+            Remotes:FindFirstChild("Interact")
+            Interact.Parent = Remotes
+            game.Players.LocalPlayer.Character:FindFirstChild("CharacterHandler")
+            CharacterHandler:FindFirstChild("Contents")
+            Contents:FindFirstChild("Remotes")
+            Remotes:FindFirstChild("Interact")
+            game.Players.LocalPlayer.Character:FindFirstChild("Stats")
+            Stats:FindFirstChild("ClashStrength")
+            QTEToma.Visible = false 
+        end)
+        game.Players.LocalPlayer.PlayerGui.Parent = game.Players.LocalPlayer
+        game.Players.LocalPlayer.PlayerGui.ChildAdded:Connect(function(function193, function194, function195, function196, function197) end) 
+    end,
+    Name = "AutoQTE",
+    Flag = "AutoQTENew"
+})
+local auto_avoid_chain_groundslam24 = experimental20:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function191, function192) end,
+    Name = "Auto Avoid Chain GroundSlam",
+    Flag = "AutoSlam"
+})
+local slam_trigger_burst25 = experimental20:CreateSlider({
+    Callback = function(function187, function188, function189, function190) end,
+    Name = "Slam Trigger Burst",
+    Suffix = "burst",
+    CurrentValue = 70,
+    Increment = 5,
+    Range = { [1] = 40, [2] = 100 },
+    Flag = "SlamBurstThreshold"
+})
+local noclip26 = experimental20:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function184, function185, function186)
+        runService4.Stepped:Connect(function(function180, function181, function182, function183)
+            game.Players.LocalPlayer.Character:GetDescendants()
+            Humanoid:IsA("BasePart")
+            Items:IsA("BasePart")
+            Sack:IsA("BasePart")
+            SurfaceAppearance:IsA("BasePart")
+            Stats:IsA("BasePart")
+            ClashStrength:IsA("BasePart")
+            ClashStrength.Value:IsA("BasePart")
+            CanCollide.Parent = ClashStrength.Value
+            ClashStrength.Value.CanCollide = false
+            CharacterHandler:IsA("BasePart")
+            Contents:IsA("BasePart")
+            Remotes:IsA("BasePart")
+            Interact:IsA("BasePart") 
+        end) 
+    end,
+    Name = "NoClip",
+    Flag = "NoClip"
+})
+local silent_aimbot_auto_target27 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function178, function179) end,
+    Name = "Silent Aimbot (Auto Target)",
+    Flag = "SilentAimbot"
+})
+local no_recoil_spread28 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function175, function176, function177) end,
+    Name = "No Recoil & Spread",
+    Flag = "NoRecoilSpread"
+})
+local winchester_bar_fill29 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function170, function171, function172, function173, function174)
+        runService4.Heartbeat:Connect(function(function167, function168, function169) end) 
+    end,
+    Name = "Winchester Bar Fill",
+    Flag = "WinchesterBuff"
+})
+local hitbox_expander_ai30 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function162, function163, function164, function165, function166) end,
+    Name = "Hitbox Expander (AI)",
+    Flag = "HitboxExpander"
+})
+local infinite_stamina31 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function161)
+        game.Players.LocalPlayer.Character:WaitForChild("Stats", 5)
+        Stats.Parent = game.Players.LocalPlayer.Character
+        game.Players.LocalPlayer.Character.Stats:WaitForChild("Stamina", 5)
+        Stamina.Parent = game.Players.LocalPlayer.Character.Stats
+        runService4.Heartbeat:Connect(function(function156, function157, function158, function159, function160)
+            Value.Parent = Stamina 
+        end)
+        game.Players.LocalPlayer.CharacterAdded:Connect(function(function152, function153, function154, function155) end) 
+    end,
+    Name = "Infinite Stamina",
+    Flag = "InfStam"
+})
+local inf_combat_stamina32 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function148, function149, function150, function151)
+        game.Players.LocalPlayer.Character:WaitForChild("Stats", 5)
+        game.Players.LocalPlayer.Character.Stats:WaitForChild("CombatStamina", 5)
+        CombatStamina.Parent = game.Players.LocalPlayer.Character.Stats
+        runService4.Heartbeat:Connect(function(function144, function145, function146, function147)
+            Value.Parent = CombatStamina 
+        end)
+        game.Players.LocalPlayer.CharacterAdded:Connect(function(function140, function141, function142, function143) end) 
+    end,
+    Name = "Inf Combat Stamina",
+    Flag = "InfCom"
+})
+local inf_combat_knife33 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function136, function137, function138, function139)
+        Rayfield:Notify({
+            Image = "keyboard",
+            Duration = 6,
+            Title = "Adonis",
+            Content = "Press adonis bypass first"
+        }) 
+    end,
+    Name = "Inf Combat Knife",
+    Flag = "KeepCombatKnife"
+})
+combat21:CreateDivider()
+local crucifix_abuse_no_item_needed35 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function133, tbl1, function134, function135)
+        game.Players.LocalPlayer.Character:FindFirstChild("CharacterHandler")
+        CharacterHandler:FindFirstChild("Contents")
+        Contents:FindFirstChild("Remotes")
+        Remotes:FindFirstChild("Interact")
+        Rayfield:Notify({
+            Duration = 4,
+            Title = "Kepler",
+            Content = "Waiting for token..."
+        })
+        workspace7:FindFirstChild("Misc")
+        Misc:FindFirstChild("AI")
+        AI:FindFirstChild("CHAIN")
+        CHAIN.Parent = AI
+        CHAIN:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.Parent = CHAIN
+        CHAIN:FindFirstChild("HumanoidRootPart")
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.Parent = game.Players.LocalPlayer.Character
+        Position.Parent = HumanoidRootPart
+        tbl1.Parent = HumanoidRootPart.Position 
+    end,
+    Name = "Crucifix Abuse (no item needed)",
+    Flag = "CrucifixAbuse"
+})
+local trigger_distance36 = combat21:CreateSlider({
+    Callback = function(function127, function128, function129, function130, function131, function132)
+ 
+    end,
+    Name = "Trigger Distance",
+    Suffix = "studs",
+    CurrentValue = 40,
+    Increment = 5,
+    Range = { [1] = 10, [2] = 120 },
+    Flag = "CrucifixDistance"
+})
+local stun_distance37 = combat21:CreateSlider({
+    Callback = function(function126) end,
+    Name = "Stun Distance",
+    Suffix = "studs",
+    CurrentValue = 40,
+    Increment = 5,
+    Range = { [1] = 10, [2] = 120 },
+    Flag = "ChainStunDistance"
+})
+local always_chain_stun_uses_crucifix38 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function123, function124, function125)
+        game.Players.LocalPlayer.Character:FindFirstChild("CharacterHandler")
+        CharacterHandler:FindFirstChild("Contents")
+        Contents:FindFirstChild("Remotes")
+        Remotes:FindFirstChild("Interact")
+        Rayfield:Notify({
+            Duration = 4,
+            Title = "Kepler",
+            Content = "Waiting for token..."
+        })
+        workspace7:FindFirstChild("Misc")
+        Misc:FindFirstChild("AI")
+        AI:FindFirstChild("CHAIN")
+        CHAIN:FindFirstChild("HumanoidRootPart")
+        CHAIN:FindFirstChild("HumanoidRootPart")
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") 
+    end,
+    Name = "Always Chain Stun (uses crucifix)",
+    Flag = "AlwaysChainStun"
+})
+local godmode39 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function119, function120, function121, function122)
+        workspace7:FindFirstChild("Misc")
+        Misc:FindFirstChild("AI")
+        AI:FindFirstChild("CHAIN")
+        CHAIN:FindFirstChild("HumanoidRootPart")
+        CHAIN:FindFirstChild("HumanoidRootPart")
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        Rayfield:Notify({ Duration = 4, Title = "Kepler", Content = "Activated" }) 
+    end,
+    Name = "GodMode",
+    Flag = "GodMode"
+})
+local godmode_distance40 = combat21:CreateSlider({
+    Callback = function(function117, function118) end,
+    Name = "GodMode Distance",
+    Suffix = "studs",
+    CurrentValue = 40,
+    Increment = 5,
+    Range = { [1] = 10, [2] = 120 },
+    Flag = "GodModeDistance"
+})
+combat21:CreateDivider()
+local kill_poor_chain42 = combat21:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function114, function115, function116)
+        Rayfield:Notify({
+            Duration = 8,
+            Title = "Kill Chain",
+            Content = "Shoot and hit once pls..."
+        })
+        workspace7:FindFirstChild("Misc")
+        Misc:FindFirstChild("AI")
+        AI:FindFirstChild("CHAIN")
+        CHAIN:FindFirstChild("HumanoidRootPart")
+        CHAIN:FindFirstChildOfClass("Humanoid")
+        Part.Parent = CHAIN
+        CHAIN:FindFirstChild("HumanoidRootPart")
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        Health.Parent = Part 
+    end,
+    Name = "Kill Poor Chain",
+    Flag = "KillChain"
+})
+local kill_chain_inflict_rate43 = combat21:CreateSlider({
+    Callback = function(function109, function110, function111, function112, function113) end,
+    Name = "Kill Chain Inflict Rate",
+    Suffix = "/s",
+    CurrentValue = 20,
+    Increment = 5,
+    Range = { [1] = 5, [2] = 60 },
+    Flag = "KillChainRate"
+})
+local give_item44 = kepler_2_1_recode1:CreateTab("Give Item", "backpack")
+local unlock_artifacts_blueprint_quest45 = give_item44:CreateButton({
+    Name = "Unlock Artifacts Blueprint (Quest)",
+    Callback = function()
+        replicatedStorage3:FindFirstChild("GameStuff")
+        GameStuff:FindFirstChild("Remotes")
+        Remotes:FindFirstChild("Quest")
+        Quest.Parent = Remotes
+        Quest:FireServer("ArtifactsBlueprint") 
+    end
+})
+local give_ak4746 = give_item44:CreateButton({
+    Name = "Give AK47",
+    Callback = function(function106, function107, function108)
+        game.Players.LocalPlayer.Character:FindFirstChild("Items")
+        game.Players.LocalPlayer.Character:FindFirstChild("Stats") 
+    end
+})
+local give_deagle47 = give_item44:CreateButton({
+    Name = "Give Deagle",
+    Callback = function(function103, function104, function105)
+        game.Players.LocalPlayer.Character:FindFirstChild("Items")
+        game.Players.LocalPlayer.Character:FindFirstChild("Stats") 
+    end
+})
+local give_doublebarrel48 = give_item44:CreateButton({
+    Name = "Give DoubleBarrel",
+    Callback = function(function100, function101, function102)
+        game.Players.LocalPlayer.Character:FindFirstChild("Items")
+        game.Players.LocalPlayer.Character:FindFirstChild("Stats") 
+    end
+})
+local give_m191149 = give_item44:CreateButton({
+    Name = "Give M1911",
+    Callback = function(function97, function98, function99)
+        game.Players.LocalPlayer.Character:FindFirstChild("Items")
+        game.Players.LocalPlayer.Character:FindFirstChild("Stats") 
+    end
+})
+local give_crucifix50 = give_item44:CreateButton({
+    Name = "Give Crucifix",
+    Callback = function(function94, function95, function96)
+        game.Players.LocalPlayer.Character:FindFirstChild("Items")
+        game.Players.LocalPlayer.Character:FindFirstChild("Stats") 
+    end
+})
+local ddos51 = kepler_2_1_recode1:CreateTab("DDoS", "wifi-off")
+local ddos52 = ddos51:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function93)
+        Rayfield:Notify({
+            Duration = 8,
+            Title = "Started",
+            Content = "Fire your weapon to arm the spam."
+        }) 
+    end,
+    Name = "DDos",
+    Flag = "DDoSActive"
+})
+local packets_per_second53 = ddos51:CreateSlider({
+    Callback = function(function91, function92) end,
+    Name = "Packets Per Second",
+    Suffix = "p/s",
+    CurrentValue = 15,
+    Increment = 1,
+    Range = { [1] = 5, [2] = 60 },
+    Flag = "DDoSRate"
+})
+local misc54 = kepler_2_1_recode1:CreateTab("Misc", "route")
+local instant_medkit_soda_fast_use55 = misc54:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function90)
+        replicatedStorage3:WaitForChild("GameStuff")
+        GameStuff:WaitForChild("ItemAnimations", 5)
+        ItemAnimations.Parent = GameStuff
+        ItemAnimations:FindFirstChild("MedkitHealSelf")
+        MedkitHealSelf.Parent = ItemAnimations
+        AnimationId.Parent = MedkitHealSelf
+        ItemAnimations:FindFirstChild("MedkitHealOther")
+        MedkitHealOther.Parent = ItemAnimations
+        AnimationId.Parent = MedkitHealOther
+        ItemAnimations:FindFirstChild("SodaDrink")
+        SodaDrink.Parent = ItemAnimations
+        AnimationId.Parent = SodaDrink
+        ItemAnimations:FindFirstChild("Pills")
+        Pills.Parent = ItemAnimations
+        AnimationId.Parent = Pills
+        game.Players.LocalPlayer.Character:WaitForChild("Humanoid", 5)
+        Humanoid:FindFirstChildOfClass("Animator")
+        Part.Parent = Humanoid
+        Part.AnimationPlayed:Connect(function(function88, function89) end)
+        game.Players.LocalPlayer.CharacterAdded:Connect(function(function86, function87) end) 
+    end,
+    Name = "Instant Medkit & Soda (Fast Use)",
+    Flag = "InstantHeal"
+})
+local no_slowdown_reload_heal56 = misc54:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function83, function84, function85)
+        runService4.RenderStepped:Connect(function(function80, function81, function82)
+            replicatedStorage3:FindFirstChild("Assets")
+            Assets:FindFirstChild("Client")
+            Client:FindFirstChild("Movement")
+            Movement:FindFirstChild("Velocity")
+            game.Players.LocalPlayer.Character:FindFirstChild("Stats")
+            Stats:FindFirstChild("WalkSpeed")
+            WalkSpeed.Parent = Stats
+            Value.Parent = WalkSpeed 
+        end) 
+    end,
+    Name = "No Slowdown (Reload/Heal)",
+    Flag = "NoSlow"
+})
+local players_esp57 = misc54:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function76, function77, function78, function79)
+        players2:GetPlayers()
+        players2.PlayerAdded:Connect(function(function70, function71, function72, function73, function74, function75)
+            instBillboardGui480.AlwaysOnTop = true
+            instBillboardGui480.Size = UDim2.new(0, 120, 0, 34)
+            instBillboardGui480.StudsOffset = Vector3.new(0, 2.6, 0)
+            instFrame481.BackgroundTransparency = 1
+            instFrame481.Size = UDim2.new(1, 0, 1, 0)
+            instFrame481.Parent = Instance.new("BillboardGui")
+            local instUIListLayout482 = Instance.new("UIListLayout")
+            instUIListLayout482.FillDirection = Enum.FillDirection.Vertical
+            instUIListLayout482.HorizontalAlignment = Enum.HorizontalAlignment.Center
+            instUIListLayout482.SortOrder = Enum.SortOrder.LayoutOrder
+            instUIListLayout482.Parent = Instance.new("Frame")
+            local instTextLabel483 = Instance.new("TextLabel")
+            instTextLabel483.BackgroundTransparency = 1
+            instTextLabel483.Font = Enum.Font.Code
+            instTextLabel483.TextSize = 13
+            instTextLabel483.LayoutOrder = 1
+            instTextLabel483.TextColor3 = Color3.fromRGB(232, 230, 225)
+            instTextLabel483.TextStrokeTransparency = 0.7 
+        end)
+        runService4.Heartbeat:Connect(function(function64, function65, function66, function67, function68, function69)
+ 
+        end) 
+    end,
+    Name = "Players ESP",
+    Flag = "PlayersESP"
+})
+misc54:CreateDivider()
+local teleport_to_safehouse59 = misc54:CreateButton({
+    Name = "Teleport to SafeHouse",
+    Callback = function(function62, function63)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(164.3, -93.4, 229.1) 
+    end
+})
+local teleport_to_workshop_outside60 = misc54:CreateButton({
+    Name = "Teleport to WorkShop Outside",
+    Callback = function(function60, function61)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(132.5, -107.2, -3) 
+    end
+})
+local teleport_to_workshop_inside61 = misc54:CreateButton({
+    Name = "Teleport to WorkShop Inside",
+    Callback = function(function58, function59)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(168.2, -102.8, -31.5) 
+    end
+})
+local teleport_to_cabin_inside62 = misc54:CreateButton({
+    Name = "Teleport to Cabin inside",
+    Callback = function(function56, function57)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(-323.2, -87.5, 292) 
+    end
+})
+local teleport_to_shop63 = misc54:CreateButton({
+    Name = "Teleport to Shop",
+    Callback = function(function54, function55)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(-112.9, -86.5, 205) 
+    end
+})
+local teleport_to_safezone64 = misc54:CreateButton({
+    Name = "Teleport to SafeZone",
+    Callback = function(function52, function53)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(41.06, -99.17, 570.59) 
+    end
+})
+local teleport_to_powerstation65 = misc54:CreateButton({
+    Name = "Teleport to PowerStation",
+    Callback = function(function50, function51)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(-209.8, -111.6, -118.7) 
+    end
+})
+local teleport_to_warehouse66 = misc54:CreateButton({
+    Name = "Teleport to WareHouse",
+    Callback = function(function48, function49)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(316, -112.5, -257.3) 
+    end
+})
+local teleport_to_ritual67 = misc54:CreateButton({
+    Name = "Teleport to Ritual",
+    Callback = function(function46, function47)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(-20.1, -108.6, -228.5) 
+    end
+})
+local teleport_to_leaderboard68 = misc54:CreateButton({
+    Name = "Teleport to LeaderBoard",
+    Callback = function(function44, function45)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(47.1, -97, 351.2) 
+    end
+})
+local teleport_to_radio_tower69 = misc54:CreateButton({
+    Name = "Teleport to Radio Tower",
+    Callback = function(function42, function43)
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        HumanoidRootPart.CFrame = CFrame.new(-403.7, -111.5, 45.6) 
+    end
+})
+misc54:CreateDivider()
+local unlock_doublebarrel71 = misc54:CreateButton({
+    Name = "Unlock DoubleBarrel",
+    Callback = function(function41)
+        Blueprints:GetAttribute("DoubleBarrel")
+        Blueprints:GetAttribute("DoubleBarrel")
+        Blueprints:SetAttribute("DoubleBarrel", true)
+        Blueprints:SetAttribute("DoubleBarrel", true) 
+    end
+})
+local unlock_m191172 = misc54:CreateButton({
+    Name = "Unlock M1911",
+    Callback = function(function40)
+        Blueprints:GetAttribute("M1911")
+        Blueprints:GetAttribute("M1911")
+        Blueprints:SetAttribute("M1911", true)
+        Blueprints:SetAttribute("M1911", true) 
+    end
+})
+local unlock_machete73 = misc54:CreateButton({
+    Name = "Unlock Machete",
+    Callback = function(function39)
+        Blueprints:GetAttribute("Machete")
+        Blueprints:GetAttribute("Machete")
+        Blueprints:SetAttribute("Machete", true)
+        Blueprints:SetAttribute("Machete", true) 
+    end
+})
+local unlock_spellbook74 = misc54:CreateButton({
+    Name = "Unlock SpellBook",
+    Callback = function(function38)
+        Blueprints:GetAttribute("SpellBook")
+        Blueprints:GetAttribute("SpellBook")
+        Blueprints:SetAttribute("SpellBook", true)
+        Blueprints:SetAttribute("SpellBook", true) 
+    end
+})
+local unlock_combatknife75 = misc54:CreateButton({
+    Name = "Unlock CombatKnife",
+    Callback = function(function37)
+        Blueprints:GetAttribute("CombatKnife")
+        Blueprints:GetAttribute("CombatKnife")
+        Blueprints:SetAttribute("CombatKnife", true)
+        Blueprints:SetAttribute("CombatKnife", true) 
+    end
+})
+local unlock_all_blueprints76 = misc54:CreateButton({
+    Name = "Unlock all blueprints",
+    Callback = function(function34, function35, function36)
+        Blueprints:GetAttribute("DoubleBarrel")
+        Blueprints:GetAttribute("DoubleBarrel")
+        Blueprints:SetAttribute("DoubleBarrel", true)
+        Blueprints:SetAttribute("DoubleBarrel", true)
+        Blueprints:GetAttribute("M1911")
+        Blueprints:GetAttribute("M1911")
+        Blueprints:SetAttribute("M1911", true)
+        Blueprints:SetAttribute("M1911", true)
+        Blueprints:GetAttribute("Machete")
+        Blueprints:GetAttribute("Machete")
+        Blueprints:SetAttribute("Machete", true)
+        Blueprints:SetAttribute("Machete", true)
+        Blueprints:GetAttribute("SpellBook")
+        Blueprints:GetAttribute("SpellBook")
+        Blueprints:SetAttribute("SpellBook", true)
+        Blueprints:SetAttribute("SpellBook", true)
+        Blueprints:GetAttribute("CombatKnife")
+        Blueprints:GetAttribute("CombatKnife")
+        Blueprints:SetAttribute("CombatKnife", true)
+        Blueprints:SetAttribute("CombatKnife", true) 
+    end
+})
+local render77 = kepler_2_1_recode1:CreateTab("Render", "shield")
+local chain_esp78 = render77:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function33)
+        Instance.new("ScreenGui")
+        game:GetService("CoreGui")
+        workspace7:WaitForChild("Misc", 5)
+        Misc:WaitForChild("AI", 5)
+        AI.ChildAdded:Connect(function(function31) end)
+        runService4.RenderStepped:Connect(function(function32)
+            game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") 
+        end)
+        AI:GetChildren()
+        CHAIN:IsA("Model") 
+    end,
+    Name = "Chain Esp",
+    Flag = "ChainEsp"
+})
+local scrap_esp79 = render77:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function28, function29, function30)
+        workspace7:FindFirstChild("Misc")
+        Misc.Parent = workspace7
+        workspace7.Misc:FindFirstChild("Zones")
+        Zones.Parent = workspace7.Misc
+        Zones.Parent = workspace7.Misc
+        workspace7.Misc.Zones:FindFirstChild("LootingItems")
+        LootingItems.Parent = workspace7.Misc.Zones
+        LootingItems.Parent = workspace7.Misc.Zones
+        workspace7.Misc.Zones.LootingItems:FindFirstChild("Scrap")
+        Scrap.Parent = workspace7.Misc.Zones.LootingItems
+        Scrap:GetChildren()
+        Scrap.ChildAdded:Connect(function(function22, function23, function24, function25, function26, function27)
+ 
+        end)
+        runService4.RenderStepped:Connect(function(function20, function21)
+            game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") 
+        end) 
+    end,
+    Name = "Scrap ESP",
+    Flag = "ScrapEsp"
+})
+instAnimation598.AnimationId = "rbxassetid://215384594"
+local scrap_collector_floor_hide80 = misc54:CreateToggle({
+    CurrentValue = false,
+    Callback = function(function16, function17, function18, function19)
+        workspace.CurrentCamera.FieldOfView = 90
+        game.Players.LocalPlayer.CameraMode = Enum.CameraMode.Classic
+        game.Players.LocalPlayer.CameraMaxZoomDistance = 1000
+        game.Players.LocalPlayer.CameraMinZoomDistance = 0.5
+        game.Players.LocalPlayer.Character:FindFirstChild("Sack")
+        Sack.Transparency = 1
+        runService4.Heartbeat:Connect(function(function13, function14, function15)
+            game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+            game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+            Humanoid:IsDescendantOf(workspace7)
+            game.Players.LocalPlayer.Character:FindFirstChild("Torso")
+            Torso.Parent = game.Players.LocalPlayer.Character
+            LoadAnimation.Parent = Humanoid
+            Humanoid:LoadAnimation(Instance.new("Animation")).Priority = Enum.AnimationPriority.Action4
+            workspace.CurrentCamera.CameraSubject = HumanoidRootPart
+            game.Players.LocalPlayer.Character:FindFirstChild("Sack")
+            game.Players.LocalPlayer.Character:GetDescendants()
+            Humanoid:IsA("BasePart") 
+        end) 
+    end,
+    Name = "Scrap Collector (Floor Hide)",
+    Flag = "ScrapCollector"
+})
+local debug81 = kepler_2_1_recode1:CreateTab("Debug", "bug")
+local open_dev_telemetry82 = debug81:CreateButton({
+    Name = "Open Dev Telemetry",
+    Callback = function(function11, function12)
+        local instScreenGui631 = Instance.new("ScreenGui")
+        instScreenGui631.DisplayOrder = 55
+        instScreenGui631.ResetOnSpawn = false
+        local instFrame632 = Instance.new("Frame")
+        instFrame632.AnchorPoint = Vector2.new(1, 0.5)
+        instFrame632.Position = UDim2.new(1, -12, 0.5, 0)
+        instFrame632.Size = UDim2.new(0, 380, 0, 500)
+        instFrame632.BackgroundColor3 = Color3.fromRGB(10, 10, 12)
+        instFrame632.BorderColor3 = Color3.fromRGB(58, 58, 64)
+        instFrame632.BorderSizePixel = 1
+        instFrame632.Parent = instScreenGui631
+        local instFrame633 = Instance.new("Frame")
+        instFrame633.Size = UDim2.new(1, 0, 0, 30)
+        instFrame633.BackgroundColor3 = Color3.fromRGB(21, 21, 25)
+        instFrame633.BorderSizePixel = 0
+        instFrame633.Parent = instFrame632
+        instTextLabel634.BackgroundTransparency = 1
+        instTextLabel634.Position = UDim2.new(0, 10, 0, 0)
+        instTextLabel634.Size = UDim2.new(1, -90, 1, 0)
+        instTextLabel634.Font = Enum.Font.Code
+        instTextLabel634.TextSize = 13
+        instTextLabel634.TextColor3 = Color3.fromRGB(232, 230, 225)
+        instTextLabel634.TextXAlignment = Enum.TextXAlignment.Left
+        instTextLabel634.Text = "KEPLER :: DEV TELEMETRY"
+        instTextLabel634.Parent = instFrame633
+        local instTextButton635 = Instance.new("TextButton")
+        instTextButton635.BackgroundTransparency = 1
+        instTextButton635.AnchorPoint = Vector2.new(1, 0)
+        instTextButton635.Position = UDim2.new(1, -8, 0, 0)
+        instTextButton635.Size = UDim2.new(0, 60, 1, 0)
+        instTextButton635.Font = Enum.Font.Code
+        instTextButton635.TextSize = 13
+        instTextButton635.TextColor3 = Color3.fromRGB(214, 58, 66)
+        instTextButton635.Text = "[ X ]"
+        instTextButton635.Parent = instFrame633
+        instFrame633.InputBegan:Connect(function(function1, function2, function3) end)
+        userInputService6.InputChanged:Connect(function(function4, function5, function6, function7, function8) end)
+        local instScrollingFrame642 = Instance.new("ScrollingFrame")
+        instScrollingFrame642.Position = UDim2.new(0, 8, 0, 36)
+        instScrollingFrame642.Size = UDim2.new(1, -16, 1, -44)
+        instScrollingFrame642.BackgroundTransparency = 1
+        instScrollingFrame642.BorderSizePixel = 0
+        instScrollingFrame642.ScrollBarThickness = 3
+        instScrollingFrame642.ScrollBarImageColor3 = Color3.fromRGB(90, 90, 96)
+        instScrollingFrame642.CanvasSize = UDim2.new(0, 0, 0, 0)
+        instScrollingFrame642.AutomaticCanvasSize = Enum.AutomaticSize.Y
+        instScrollingFrame642.Parent = instFrame632
+        instUIListLayout643.FillDirection = Enum.FillDirection.Vertical
+        instUIListLayout643.SortOrder = Enum.SortOrder.LayoutOrder
+        instUIListLayout643.Padding = UDim.new(0, 3)
+        instUIListLayout643.Parent = instScrollingFrame642
+        instTextButton635.MouseButton1Click:Connect(function(function9, function10)
+            instScreenGui631:Destroy()
+            instFrame632:Destroy()
+            instFrame633:Destroy()
+            Instance.new("TextLabel"):Destroy()
+            instTextLabel634.Parent = nil
+            instTextButton635:Destroy()
+            instTextButton635.Parent = nil
+            instFrame633.Parent = nil
+            instScrollingFrame642:Destroy()
+            Instance.new("UIListLayout"):Destroy()
+            instUIListLayout643.Parent = nil
+            instScrollingFrame642.Parent = nil
+            instFrame632.Parent = nil
+            instScreenGui631.Parent = nil 
+        end)
+        game.Players.LocalPlayer:WaitForChild("PlayerGui") 
+    end
+})
+Rayfield:Notify({
+    Duration = 6,
+    Title = "Kepler 2.0 | Recode",
+    Content = "Working!"
+})
